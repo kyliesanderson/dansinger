@@ -1,0 +1,71 @@
+{
+   "short-bio": "this is a short version of the bio",
+   "long-bio": "this is a long version of the bio",
+   "publications":[
+      "pubA",
+      "pubB",
+      "pubC"
+   ],
+   "articles": [
+      {
+         "date": "February 2019",
+         "title": "Once Upon A Time I Cried A Lot",
+         "type": "Essay",
+         "publication": "The Onion"
+      },
+      {
+         "date": "February 2019",
+         "title": "Once Upon A Time I Cried A Lot",
+         "type": "Essay",
+         "publication": "The Onion"
+      },
+      {
+         "date": "February 2019",
+         "title": "Once Upon A Time I Cried A Lot",
+         "type": "Essay",
+         "publication": "The Onion"
+      },
+      {
+         "date": "February 2019",
+         "title": "Once Upon A Time I Cried A Lot",
+         "type": "Essay",
+         "publication": "The Onion"
+      },
+      {
+         "date": "February 2019",
+         "title": "Once Upon A Time I Cried A Lot",
+         "type": "Essay",
+         "publication": "The Onion"
+      },
+      {
+         "date": "February 2019",
+         "title": "Once Upon A Time I Cried A Lot",
+         "type": "Essay",
+         "publication": "The Onion"
+      },
+      {
+         "date": "February 2019",
+         "title": "Once Upon A Time I Cried A Lot",
+         "type": "Essay",
+         "publication": "The Onion"
+      },
+      {
+         "date": "February 2019",
+         "title": "Once Upon A Time I Cried A Lot",
+         "type": "Essay",
+         "publication": "The Onion"
+      },
+      {
+         "date": "February 2019",
+         "title": "Once Upon A Time I Cried A Lot",
+         "type": "Essay",
+         "publication": "The Onion"
+      },
+      {
+         "date": "February 2019",
+         "title": "Once Upon A Time I Cried A Lot",
+         "type": "Essay",
+         "publication": "The Onion"
+      }
+   ]
+}
