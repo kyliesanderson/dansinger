@@ -32,12 +32,14 @@ class ArticleTable extends Component {
 
    createArchiveRow(article){
       return(
-         <tr>
-            <td>{article.date}</td>
-            <td>{article.title}</td>
-            <td>{article.type}</td>
-            <td>{article.publication}</td>
-         </tr>
+         <a href={article.link}>
+            <tr>
+               <td>{article.date}</td>
+               <td>{article.title}</td>
+               <td>{article.type}</td>
+               <td>{article.publication}</td>
+            </tr>
+         </a>
       );
    }
 
@@ -49,7 +51,7 @@ class ArticleTable extends Component {
    render(){
       if(this.props.page == "archive"){
          return (
-            <Table bordered hover>
+            <Table hover className="article-table">
                <thead>
                   <tr>
                      <th>Date</th>
@@ -66,7 +68,7 @@ class ArticleTable extends Component {
       }
       else {
          return (
-            <Table bordered hover>
+            <Table hover>
                <tbody>
                   {this.createHomeBody(content.articles)}
                </tbody>
