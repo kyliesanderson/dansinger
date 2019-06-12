@@ -11,11 +11,11 @@ import Home from './Home.js';
 class App extends Component{
    render(){
       return (
-         <Container className="App">
+         <div className="App">
             <Route path="/archive" component={Archive} />
             <Route path="/bio" component={Bio} />
             <Route exact path="/" component={Home} />
-         </Container>
+         </div>
       );
    }
 }

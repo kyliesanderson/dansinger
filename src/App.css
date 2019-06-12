@@ -1,0 +1,70 @@
+.table-link{
+   color: black;
+}
+
+.table-link:hover{
+   color: black;
+   text-decoration: none !important;
+}
+
+.archive-table{
+   padding-left: 50px;
+   padding-right: 50px;
+   width: 100%;
+}
+
+.archive-table-header {
+   font-family: 'Space Mono', monospace;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 12px;
+   padding-left: 50px;
+   padding-right: 50px;
+}
+
+.archive-table-title {
+   font-family: 'Arimo', Helvetica, Arial, sans-serif;
+   font-size: 20px;
+   font-weight: 700;
+}
+
+.archive-table-row{
+   font-family: 'Arimo', Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   border-top: 1px lightgrey solid;
+   padding: 15px 50px 15px 50px;
+   width: auto;
+   line-height: 20px;
+   display: flex;
+
+}
+
+.archive-table-row:hover{
+   background: lightgrey;
+}
+
+.home-table{
+   padding-left: 50px;
+   padding-right: 50px;
+   width: 100%;
+
+
+
+}
+
+.home-table-row{
+   font-family: 'Space Mono', monospace;
+   font-size: 13px;
+   border-top: 1px lightgrey solid;
+   padding: 15px 50px 15px 50px;
+   width: auto;
+   line-height: 20px;
+   display: flex;
+}
+
+.home-table-title{
+   font-family: 'Arimo', Helvetica, Arial, sans-serif;
+   font-size: 26px;
+   font-weight: 700;
+   line-height: 30px;
+}

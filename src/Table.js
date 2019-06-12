@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Table} from 'react-bootstrap';
+import {Table, Col,Row, Container} from 'react-bootstrap';
 import content from './content.json';
 
 
@@ -18,11 +18,19 @@ class ArticleTable extends Component {
 
    createHomeRow(article){
       return (
-         <tr>
-            <td>{article.title}</td>
-            <td>{article.type}</td>
-            <td>{article.publication}</td>
-         </tr>
+         <a href={article.link} className="table-link">
+            <Row className="home-table-row">
+               <Col md={7}>
+                  <td className="home-table-title">{article.title}</td>
+               </Col>
+               <Col md={2}>
+                  <td>{article.type}</td>
+               </Col>
+               <Col md={3}>
+                  <td>{article.publication}</td>
+               </Col>
+            </Row>
+         </a>
       );
    }
 
@@ -32,13 +40,21 @@ class ArticleTable extends Component {
 
    createArchiveRow(article){
       return(
-         <a href={article.link}>
-            <tr>
-               <td>{article.date}</td>
-               <td>{article.title}</td>
-               <td>{article.type}</td>
-               <td>{article.publication}</td>
-            </tr>
+         <a href={article.link} className="table-link">
+            <Row className="archive-table-row">
+               <Col md={2}>
+                  <td>{article.date}</td>
+               </Col>
+               <Col md={5}>
+                  <td className="archive-table-title">{article.title}</td>
+               </Col>
+               <Col md={2}>
+                  <td>{article.type}</td>
+               </Col>
+               <Col md={3}>
+                  <td>{article.publication}</td>
+               </Col>
+            </Row>
          </a>
       );
    }
@@ -49,26 +65,37 @@ class ArticleTable extends Component {
 
 
    render(){
+      var list;
       if(this.props.page == "archive"){
+         list = content.articles.slice(0, 7);
          return (
-            <Table hover className="article-table">
+            <Table borderless className="archive-table">
                <thead>
-                  <tr>
-                     <th>Date</th>
-                     <th>Title</th>
-                     <th>Type</th>
-                     <th>Publication</th>
-                  </tr>
+                  <Row className="archive-table-header">
+                     <Col md={2}>
+                        <th>Date</th>
+                     </Col>
+                     <Col md={5}>
+                        <th>Title</th>
+                     </Col>
+                     <Col md={2}>
+                        <th>Type</th>
+                     </Col>
+                     <Col md={3}>
+                        <th>Publication</th>
+                     </Col>
+                  </Row>
                </thead>
                <tbody>
-                  {this.createArchiveBody(content.articles)}
+                  {this.createArchiveBody(list)}
                </tbody>
             </Table>
          );
       }
       else {
+         list = content.articles.slice(0, 10);
          return (
-            <Table hover>
+            <Table borderless className="home-table">
                <tbody>
                   {this.createHomeBody(content.articles)}
                </tbody>
