@@ -7,6 +7,7 @@ import './App.css';
 import Bio from './Bio.js';
 import Archive from './Archive.js';
 import Home from './Home.js';
+import Header from './Header.js';
 
 class App extends Component{
    render(){

@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
+import Header from './Header.js';
 
 class Bio extends Component {
 
    render(){
       return(
-         <p>bio goes here</p>
+         <div>
+            <Header page="bio" />
+            <p>bio goes here</p>
+         </div>
       );
    }
 }
