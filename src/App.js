@@ -8,6 +8,7 @@ import Bio from './Bio.js';
 import Archive from './Archive.js';
 import Home from './Home.js';
 import Header from './Header.js';
+import Footer from './Footer.js';
 
 class App extends Component{
    render(){
@@ -16,6 +17,7 @@ class App extends Component{
             <Route path="/archive" component={Archive} />
             <Route path="/bio" component={Bio} />
             <Route exact path="/" component={Home} />
+            <Footer />
          </div>
       );
    }

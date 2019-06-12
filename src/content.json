@@ -2,80 +2,81 @@
    "shortBio": " is a writer. He writes a lot of things all the time. He is cool. This is his website where you can learn about his work and find an archive of his articles. ",
    "long-bio": "this is a long version of the bio",
    "publications":[
-      "pubA",
-      "pubB",
-      "pubC"
+      "All",
+      "Publication A",
+      "Publication B",
+      "Publication C"
    ],
    "articles": [
       {
          "link": "http://www.google.com",
          "date": "February 2019",
-         "title": "Monocle's View from Nowhere",
+         "title": "Article Title 1",
          "type": "Essay",
-         "publication": "The Onion"
+         "publication": "Publication A"
+      },
+      {
+         "link": "http://www.google.com",
+         "date": "January 2019",
+         "title": "Article Title 2",
+         "type": "Article",
+         "publication": "Publication C"
+      },
+      {
+         "link": "http://www.google.com",
+         "date": "May 2019",
+         "title": "Article Title 3",
+         "type": "Op-Ed",
+         "publication": "Publication A"
+      },
+      {
+         "link": "http://www.google.com",
+         "date": "March 2019",
+         "title": "Article Title 4",
+         "type": "Essay",
+         "publication": "Publication B"
       },
       {
          "link": "http://www.google.com",
          "date": "February 2019",
-         "title": "Once Upon A Time I Cried A Lot",
+         "title": "Article Title 5",
+         "type": "Article",
+         "publication": "Publication A"
+      },
+      {
+         "link": "http://www.google.com",
+         "date": "May 2019",
+         "title": "Article Title 6",
          "type": "Essay",
-         "publication": "The Onion"
+         "publication": "Publication C"
+      },
+      {
+         "link": "http://www.google.com",
+         "date": "January 2019",
+         "title": "Article Title 7",
+         "type": "Op-ed",
+         "publication": "Publication B"
       },
       {
          "link": "http://www.google.com",
          "date": "February 2019",
-         "title": "Once Upon A Time I Cried A Lot",
+         "title": "Article Title 8",
          "type": "Essay",
-         "publication": "The Onion"
+         "publication": "Publication A"
       },
       {
          "link": "http://www.google.com",
-         "date": "February 2019",
-         "title": "Once Upon A Time I Cried A Lot",
-         "type": "Essay",
-         "publication": "The Onion"
+         "date": "April 2019",
+         "title": "Article Title 9",
+         "type": "Article",
+         "publication": "Publication C"
       },
       {
          "link": "http://www.google.com",
-         "date": "February 2019",
-         "title": "Once Upon A Time I Cried A Lot",
+         "date": "March 2019",
+         "title": "Article Title 10",
          "type": "Essay",
-         "publication": "The Onion"
-      },
-      {
-         "link": "http://www.google.com",
-         "date": "February 2019",
-         "title": "Once Upon A Time I Cried A Lot",
-         "type": "Essay",
-         "publication": "The Onion"
-      },
-      {
-         "link": "http://www.google.com",
-         "date": "February 2019",
-         "title": "Once Upon A Time I Cried A Lot",
-         "type": "Essay",
-         "publication": "The Onion"
-      },
-      {
-         "link": "http://www.google.com",
-         "date": "February 2019",
-         "title": "Once Upon A Time I Cried A Lot",
-         "type": "Essay",
-         "publication": "The Onion"
-      },
-      {
-         "link": "http://www.google.com",
-         "date": "February 2019",
-         "title": "Once Upon A Time I Cried A Lot",
-         "type": "Essay",
-         "publication": "The Onion"
-      },
-      {
-         "link": "http://www.google.com",
-         "date": "February 2019",
-         "title": "Once Upon A Time I Cried A Lot",
-         "type": "Essay",
-         "publication": "The Onion"
+         "publication": "Publication B"
       }
    ]
 }

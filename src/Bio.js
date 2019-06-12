@@ -7,7 +7,6 @@ class Bio extends Component {
       return(
          <div>
             <Header page="bio" />
-            <p>bio goes here</p>
          </div>
       );
    }
