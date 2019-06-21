@@ -30,6 +30,7 @@
    color: black;
    padding-right: 100px;
    line-height: 25px;
+   margin-bottom: 20px;
 }
 
 .short-bio-container {
@@ -50,7 +51,7 @@
 }
 
 .navigation-link{
-   margin-left: 35px;
+   margin-left: 15px;
 }
 
 .table-link{
@@ -80,17 +81,21 @@
    font-family: 'Arimo', Helvetica, Arial, sans-serif;
    font-size: 20px;
    font-weight: 700;
+   line-height: 22px;
 }
 
 .archive-table-row{
    font-family: 'Arimo', Helvetica, Arial, sans-serif;
    font-size: 16px;
    border-top: 1px lightgrey solid;
-   padding: 15px 50px 15px 50px;
+   padding: 25px 50px 25px 50px;
    width: auto;
-   line-height: 20px;
-   display: flex;
 
+}
+
+.table-text{
+   display: block;
+   line-height: 0px;
 }
 
 .archive-table-row:hover{
@@ -132,7 +137,7 @@
    font-family: 'Arimo', Helvetica, Arial, sans-serif;
    font-size: 26px;
    font-weight: 700;
-   line-height: 30px;
+   line-height: 28px;
 }
 
 .filter-group {

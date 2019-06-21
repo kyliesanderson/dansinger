@@ -1,0 +1,24 @@
+{
+"publications":[
+   "All",
+   "Politico"
+],
+
+"articles": [
+   {
+      "link": "https://www.politico.com/story/2019/06/11/news-publishers-congress-tech-scrutiny-1521220",
+      "date": "June 2019",
+      "title": "News publishers seize moment as Congress amps up tech scrutiny",
+      "type": "Article",
+      "publication": "Politico"
+   },
+   {
+      "link": "",
+      "date": "",
+      "title": "",
+      "type": "",
+      "publication": ""
+   },
+
+]
+}

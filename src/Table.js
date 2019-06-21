@@ -19,20 +19,25 @@ class ArticleTable extends Component {
       this.createArchiveRow = this.createArchiveRow.bind(this);
       this.createButton = this.createButton.bind(this);
       this.createButtons = this.createButtons.bind(this);
+      this.handleClick = this.handleClick.bind(this);
    }
 
    createHomeRow(article){
+      if(article.title.length > 60){
+         article.title = article.title.substring(0,57);
+         article.title = article.title + "...";
+      }
       return (
          <a href={article.link} className="table-link">
             <Row className="home-table-row">
                <Col md={7}>
-                  <td className="home-table-title">{article.title}</td>
+                  <td className="home-table-title table-text">{article.title}</td>
                </Col>
                <Col md={2}>
-                  <td>{article.type}</td>
+                  <td className="table-text">{article.type}</td>
                </Col>
                <Col md={3}>
-                  <td>{article.publication}</td>
+                  <td className="table-text">{article.publication}</td>
                </Col>
             </Row>
          </a>
@@ -44,20 +49,24 @@ class ArticleTable extends Component {
    }
 
    createArchiveRow(article){
+      if(article.title.length > 50){
+         article.title = article.title.substring(0,47);
+         article.title = article.title + "...";
+      }
       return(
          <a href={article.link} className="table-link">
             <Row className="archive-table-row">
                <Col md={2}>
-                  <td>{article.date}</td>
+                  <td className="table-text">{article.date}</td>
                </Col>
                <Col md={5}>
-                  <td className="archive-table-title">{article.title}</td>
+                  <td className="archive-table-title table-text">{article.title}</td>
                </Col>
                <Col md={2}>
-                  <td>{article.type}</td>
+                  <td className="table-text">{article.type}</td>
                </Col>
                <Col md={3}>
-                  <td>{article.publication}</td>
+                  <td className="table-text">{article.publication}</td>
                </Col>
             </Row>
          </a>
@@ -68,9 +77,23 @@ class ArticleTable extends Component {
       return articles.map(this.createArchiveRow);
    }
 
+   handleClick(publication){
+      if(publication == "All"){
+         this.setState({articles: content.articles});
+      }
+      else {
+         var filteredArticles = content.articles.filter(article => article.publication == publication);
+         this.setState({articles: filteredArticles})
+      }
+   }
+
    createButton(publication){
       return (
-         <Button variant="outline-dark" className="filter-button">{publication}</Button>
+         <Button onClick={() => this.handleClick(publication)}
+            variant="outline-dark"
+            className="filter-button">
+            {publication
+         }</Button>
       );
    }
 
@@ -89,7 +112,7 @@ class ArticleTable extends Component {
                </div>
                <Table borderless className="archive-table">
                   <thead>
-                     <Row className="archive-table-header">
+                     <Row className="archive-table-header d-none d-md-flex">
                         <Col md={2}>
                            <th>Date</th>
                         </Col>
