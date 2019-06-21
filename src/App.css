@@ -50,8 +50,28 @@
    text-decoration: none;
 }
 
-.navigation-link{
+.navigation-link {
    margin-left: 15px;
+}
+
+.bio-container {
+   padding: 25px 50px 25px 65px;
+}
+
+.bio-text {
+   font-family: 'Arimo', Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   line-height: 22px;
+}
+
+.pic-container {
+   padding: 25px 50px 25px 0px;
+}
+
+.bio-pic {
+   height: 70%;
+   width: 100%;
+   object-fit: cover;
 }
 
 .table-link{
@@ -95,7 +115,6 @@
 
 .table-text{
    display: block;
-   line-height: 0px;
 }
 
 .archive-table-row:hover{
