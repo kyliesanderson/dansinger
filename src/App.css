@@ -65,12 +65,13 @@
 }
 
 .pic-container {
-   padding: 25px 50px 25px 0px;
+
 }
 
 .bio-pic {
-   height: 70%;
-   width: 100%;
+   padding-top: 25px;
+   height: 600px;
+   width: 400px;
    object-fit: cover;
 }
 
@@ -196,4 +197,25 @@
    border-top: 1px #999999 solid;
    padding-top: 15px;
    margin-top: -15px;
+}
+
+.plain-link {
+   color: black;
+   text-decoration: none;
+}
+
+.plain-link:hover{
+   color: black;
+   text-decoration: none;
+}
+
+.bio-header{
+   font-family: 'Space Mono', monospace;
+   letter-spacing: 1px;
+   border-bottom: 1px solid grey;
+   padding-top: 20px;
+   font-size: 14px;
+   margin-bottom: 5px;
+   color: black;
+   font-weight: bold;
 }

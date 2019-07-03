@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Col, Row} from 'react-bootstrap';
+import {Col, Row, Container} from 'react-bootstrap';
 import Header from './Header.js';
 import content from './articles.json';
 import bioPic from './biography-pic.jpg';
@@ -25,18 +25,25 @@ class Bio extends Component {
    }
 
    render(){
+      var emailLink = "mailto:" + content.email;
+      var twitterLink = "http://www.twitter.com/" + content.twitter;
       return(
-         <div>
+         <Container>
             <Header page="bio" />
             <Row>
-               <Col md={7} className="bio-container">
+               <Col md={7} sm={12} className="bio-container">
                   {this.generateBio(content.longBio)}
                </Col>
-               <Col md={3} className="pic-container">
+               <Col md={3} sm={10} className="d-sm-none d-md-block pic-container">
                   <img className="bio-pic" src={bioPic} />
+                  <br />
+                  <h1 className="bio-header">CONTACT INFORMATION</h1>
+                  <a href={emailLink} className="plain-link">Email</a>
+                  <br />
+                  <a href={twitterLink} className="plain-link">Twitter</a>
                </Col>
             </Row>
-         </div>
+         </Container>
       );
    }
 }

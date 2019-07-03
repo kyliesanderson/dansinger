@@ -11,10 +11,10 @@ class Footer extends Component {
       var twitterLink = "http://www.twitter.com/" + info.twitter;
       return (
          <div className="footer">
-            <p className="footer-text">&copy; 2019 Dan Singer |
-               <a href={emailLink}>Email</a>
+            <p className="footer-text">&copy; 2019 Dan Singer  |
+               <a className="plain-link" href={emailLink}>  Email  </a>
                 |
-                <a href={twitterLink}>Twitter</a>
+                <a className= "plain-link" href={twitterLink}>  Twitter</a>
             </p>
          </div>
       );
