@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Col, Row} from 'react-bootstrap';
 import Header from './Header.js';
-import content from './content.json';
+import content from './articles.json';
 import bioPic from './biography-pic.jpg';
 
 class Bio extends Component {

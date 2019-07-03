@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Table, Col,Row, Container, Button} from 'react-bootstrap';
-import content from './content.json';
+import content from './articles.json';
 
 
 class ArticleTable extends Component {

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Col, Row} from 'react-bootstrap';
-import content from './content.json';
+import content from './articles.json';
 
 class Header extends Component{
    constructor(props){
