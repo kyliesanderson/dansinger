@@ -11,25 +11,47 @@ class Bio extends Component {
 
       this.render = this.render.bind(this);
       this.generateBio = this.generateBio.bind(this);
-      this.generateParagraph = this.generateParagraph.bind(this);
+      this.generateSection = this.generateSection.bind(this);
    }
 
-   generateParagraph(paragraph){
+   generateSection(section){
+      var cursor = 0;
+      var items = [];
+      if(section.links.length === 0){
+         items.push(<p className="bio-text"> {section.paragraph} </p>);
+      }
+      else{
+         for (var i = 0; i < section.links.length; i++){
+            console.log("cursor " + cursor);
+            var linkText = section.links[i].linkText;
+            var linkIndex = section.paragraph.indexOf(linkText);
+            console.log("linkIndex " + linkIndex);
+            console.log("linkText " + linkText );
+            console.log("atIndex " + section.paragraph[linkIndex]);
+            items.push(<span>{section.paragraph.substring(cursor, linkIndex)}</span>);
+            items.push(<a className="bio-text-span bio-link" href={section.links[i].link}> {linkText} </a>);
+            cursor = linkIndex + linkText.length;
+         }
+         items.push(<span>{section.paragraph.substring(cursor, section.paragraph.length)}</span>);
+      }
       return (
-         <p className="bio-text">{paragraph}</p>
+         <p className="bio-text">
+            {items}
+         </p>
       );
    }
 
-   generateBio(paragraphs){
-      return paragraphs.map(this.generateParagraph);
+   generateBio(sections){
+      return sections.map(this.generateSection);
    }
 
    render(){
       var emailLink = "mailto:" + content.email;
       var twitterLink = "http://www.twitter.com/" + content.twitter;
       return(
+         <div>
+         <Header page="bio" />
          <Container>
-            <Header page="bio" />
             <Row>
                <Col md={7} sm={12} className="bio-container">
                   {this.generateBio(content.longBio)}
@@ -38,12 +60,14 @@ class Bio extends Component {
                   <img className="bio-pic" src={bioPic} />
                   <br />
                   <h1 className="bio-header">CONTACT INFORMATION</h1>
-                  <a href={emailLink} className="plain-link">Email</a>
+                  <a href={emailLink} className="bio-link">Email</a>
                   <br />
-                  <a href={twitterLink} className="plain-link">Twitter</a>
+                  <a href={twitterLink} className="bio-link">Twitter</a>
                </Col>
             </Row>
+            <div className="bio-buffer" />
          </Container>
+         </div>
       );
    }
 }

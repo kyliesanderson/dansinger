@@ -64,6 +64,11 @@
    line-height: 22px;
 }
 
+.bio-text-span{
+   display: inline-block;
+   margin-right: -0.25px;
+}
+
 .pic-container {
 
 }
@@ -207,6 +212,22 @@
 .plain-link:hover{
    color: black;
    text-decoration: none;
+}
+
+.bio-link {
+   color: black;
+   border-bottom: 1px solid lightgray;
+}
+
+.bio-link:hover{
+   color: black;
+   text-decoration: none;
+   border-bottom: 1px solid black;
+
+}
+
+.bio-buffer{
+   height: 100px;
 }
 
 .bio-header{
