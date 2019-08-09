@@ -28,7 +28,7 @@ class ArticleTable extends Component {
          article.title = article.title + "...";
       }
       return (
-         <a href={article.link} className="table-link">
+         <a href={article.link} target="_blank" className="table-link">
             <Row className="home-table-row">
                <Col md={7}>
                   <td className="home-table-title table-text">{article.title}</td>
@@ -54,7 +54,7 @@ class ArticleTable extends Component {
          article.title = article.title + "...";
       }
       return(
-         <a href={article.link} className="table-link">
+         <a href={article.link} target="_blank" className="table-link">
             <Row className="archive-table-row">
                <Col md={2}>
                   <td className="table-text">{article.date}</td>
